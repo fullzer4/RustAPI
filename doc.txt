@@ -1,1 +1,0 @@
-The Movie Database (TMDb) API - É uma API gratuita para o uso de filmes e séries que permite aos desenvolvedores acessar informações sobre filmes, séries, atores, elencos, avaliações e muito mais.
