@@ -1,14 +1,16 @@
 use actix_web::*;
 
 mod routers;
-use routers::{ping};
+use routers::ping::*;
+use routers::info::*;
 
 #[actix_web::main]
 
 async fn main() -> Result<(), std::io::Error> {
     let api = HttpServer::new( || {
         App::new()
-        .route("/ping", web::get().to(ping))
+        .route("/", web::get().to(ping))
+        .route("/info", web::get().to(info))
     });
 
     let port:i32 = 9091;
